@@ -1,0 +1,17 @@
+node_modules
+./node_modules
+typings
+./typings
+dist
+./dist
+dist.zip
+./dist.zip
+app/**/*.js
+./app/**/*.js
+app/**/*.map
+./app/**/*.map
+*.js.map
+package-lock.json
+./package-lock.json
+.vscode
+./.vscode

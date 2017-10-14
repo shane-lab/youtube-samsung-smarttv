@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtube Samsung Smarthub TV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Plugin.js"></script>
+  <script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/Widget.js'></script>
+  <script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/TVKeyValue.js'></script>
+  <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script>
+
+  <script type="text/javascript" language="javascript" src="./SamsungAPI.js"></script>
+</head>
+<body>
+  <div id="background">
+    <div id="guide"></div>
+    <my-app>Loading...</my-app>
+  </div>
+  <!-- build:vendor -->
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:app -->
+  <script>
+        System.import('app/vendor').then(function () {
+          System.import('app').catch(function (err) { console.error(err); });
+        });
+  </script>
+  <!-- endbuild -->
+</body>
+
+</html>
